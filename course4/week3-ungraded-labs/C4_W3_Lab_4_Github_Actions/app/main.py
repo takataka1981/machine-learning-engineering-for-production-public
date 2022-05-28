@@ -1,6 +1,5 @@
 import pickle
 import numpy as np
-import pandas as pd
 from typing import List
 from fastapi import FastAPI
 from pydantic import BaseModel, conlist
@@ -25,3 +24,5 @@ def predict(wine: Wine):
     np_batches = np.array(batches)
     pred = clf.predict(np_batches).tolist()
     return {"Prediction": pred}
+
+#nothing
