@@ -1,5 +1,6 @@
 import pickle
 import numpy as np
+import pandas as pd
 from typing import List
 from fastapi import FastAPI
 from pydantic import BaseModel, conlist
